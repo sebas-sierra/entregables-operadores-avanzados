@@ -69,9 +69,6 @@ function agregarProde(event) {
     const encuentro = resultadosUser.filter((result) => result.id == id)[0];
     console.log('Imprimo el id: ' + encuentro.id + encuentro.equipoLocal);
     //console.dir(encuentro)
-
-   
-    for (let i = 0; i < resultadosUser.length; i++) {
         
         let idNuevoProde = document.getElementById("partido-ID").innerText;
         let equipoLocalNuevoProde = document.getElementById("equipo-local").innerText;
@@ -87,7 +84,6 @@ function agregarProde(event) {
             golesVisitanteNuevoProde
         );
         resultadosAlmacenados.push(nuevoProde);
-    }
 
     console.log(resultadosAlmacenados);
     mostrarListado();
